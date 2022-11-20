@@ -1,3 +1,4 @@
+import java.util.Random;
 public class Ex3_NumerosAleatorios {
     public static void main(String[] args) throws Exception {
         Random random = new Random();
