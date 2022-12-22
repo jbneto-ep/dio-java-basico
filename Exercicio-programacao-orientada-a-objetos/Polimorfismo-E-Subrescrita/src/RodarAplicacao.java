@@ -8,7 +8,7 @@ public static void main(String[] args) {
         classe.metodo1();
     }
 
-    System.out.println("null");
+    System.out.println("");
 
     ClasseFilha2 classeFilha2 = new ClasseFilha2();
     classeFilha2.metodo2();
