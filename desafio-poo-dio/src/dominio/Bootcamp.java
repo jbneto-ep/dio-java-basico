@@ -1,22 +1,18 @@
 package dominio;
 
-import java.util.Objects;
-
-public class Main {
-
-}
 import java.time.LocalDate;
-        import java.util.HashSet;
-        import java.util.LinkedHashSet;
-        import java.util.Set;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Objects;
+import java.util.Set;
 
 public class Bootcamp {
-    private String nome;
-    private String descricao;
-    private final LocalDate dataInicial = LocalDate.now();
-    private final LocalDate dataFinal = dataInicial.plusDays(45);
-    private Set<Dev> devsInscritos = new HashSet<>();
-    private Set<Conteudo> conteudos = new LinkedHashSet<>();
+   private String nome;
+   private String descricao;
+   private final LocalDate dataInicial = LocalDate.now();
+   private final LocalDate dataFinal = dataInicial.plusDays(45); 
+   private Set<Dev> devsInscritos = new HashSet<>();
+   private Set<Conteudo> conteudos = new LinkedHashSet<>();
 
     public String getNome() {
         return nome;
@@ -46,6 +42,10 @@ public class Bootcamp {
         return conteudos;
     }
 
+    public void setConteudos(Set<Conteudo> conteudos) {
+        this.conteudos = conteudos;
+    }
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -59,7 +59,4 @@ public class Bootcamp {
         return Objects.hash(nome, descricao, dataInicial, dataFinal, devsInscritos, conteudos);
     }
 
-    public void setConteudos(Set<Conteudo> conteudos) {
-        this.conteudos = conteudos;
-    }
 }
