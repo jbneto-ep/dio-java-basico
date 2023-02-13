@@ -6,23 +6,20 @@ import java.util.Set;
 
 public class Dev {
     private String nome;
-    private Set<Conteudo> conteudosInscritos = LinkedHashSet<>();
-    private Set<Conteudo> conteudosConcluidos = LinkedHashSet<>();
+    private Set<Conteudo> conteudosInscritos = new LinkedHashSet <>();
+    private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
-    public void inscreverBootcamp(Bootcamp cootcamp) {
-    }
+    public void inscreverBootcamp(Bootcamp cootcamp){}
 
-    public void progredit() {
-    }
+    public void progredit() {}
 
-    public void calcularXP() {
-    }
-
+    public void calcularXP() {}
+    
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public void setNome(String nome){
         this.nome = nome;
     }
 
@@ -30,7 +27,7 @@ public class Dev {
         return conteudosInscritos;
     }
 
-    public void setConteudosInscritos(Set<Conteudo> conteudosInscritos) {
+    public void setConteudosInscritos(Set<Conteudo> conteudosInscritos){
         this.conteudosInscritos = conteudosInscritos;
     }
 
@@ -38,7 +35,7 @@ public class Dev {
         return conteudosConcluidos;
     }
 
-    public void setConteudosConcluidos(Set<Conteudo> conteudosConcluidos) {
+    public void setConteudosConcluidos(Set<Conteudo> conteudosConcluidos){
         this.conteudosConcluidos = conteudosConcluidos;
     }
 
