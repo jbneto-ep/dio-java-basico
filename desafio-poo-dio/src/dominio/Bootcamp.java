@@ -38,6 +38,14 @@ public class Bootcamp {
         return dataFinal;
     }
 
+    public Set<Dev> getDevsInscritos() {
+        return devsInscritos;
+    }
+
+    public void setDataInscritos(Set<Dev> devsInscritos) {
+        this.devsInscritos = devsInscritos;
+    }
+
     public Set<Conteudo> getConteudos() {
         return conteudos;
     }
