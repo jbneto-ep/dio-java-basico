@@ -1,3 +1,4 @@
+//Desafio: Camarote do Blue Cold Ice Cubes
 import java.util.Scanner; 
     
 public class ContarImpar {
@@ -10,9 +11,12 @@ public class ContarImpar {
     for (int contar= 0;contar<=tamanhoDaFila;contar++) {
       if (contar % 2 != 0){
         pessoasNoCamarote++;
-        System.out.println(pessoasNoCamarote + " pessoas no camarote");
+        
       }
-    }}}
+    }
+    System.out.println(pessoasNoCamarote + " pessoas no camarote");
+  }
+}
 
 
 		
